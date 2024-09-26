@@ -1,0 +1,98 @@
+*{
+    font-family: "Fredoka", sans-serif;
+}
+
+
+body{
+    background-image: url('./images/background4.png');
+    background-size: cover;
+}
+
+
+.mi-barra{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.myButton{
+    background-color: #F3E7E5 ;
+    border: none;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 40px;
+    color:#a7577b ;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.myButton:hover{
+    background-color: #a7577b;
+    color: #F3E7E5;
+    cursor: pointer;
+}
+
+p{
+    font-size: 1rem;
+    color: #663f51;
+}
+
+
+.myTittle{
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+    color: #a7577b;
+    margin-bottom: 50px;
+}
+
+
+.myTittleCard{
+    font-size: 1.5rem;
+    color: #c56a94 !important;
+    font-family: 'pacifico', cursive;
+}
+
+.stars{
+    position: absolute;
+    opacity: 0;
+    top: -.3em;
+    right: -.3em;
+    height: 100%;
+    transition: transform 300ms, opacity 150ms;
+}
+
+
+.stars :nth-child(n){
+    fill: #D694B2;
+}
+.buttonCard{
+    position: relative;
+    cursor: pointer;
+    padding: 1em 2em;
+    border: 0;
+    border-radius: 40px;
+    font-weight: bolder;
+    transition: 150ms, box-shadow 150ms;
+    box-shadow: 0 0  #D694B2;
+    background-color: #F3E7E5;
+    color: #a7577b;
+}
+
+.buttonCard:hover{
+    transform: translate(.3em, -.3em);
+    box-shadow: -.3em .3em #D694B2;
+}
+
+.buttonCard:hover > .stars{
+    opacity: 1;
+    transform: translate(.2em, -2em);
+}
+
+.buttonCard:active > .stars :nth-child(n){
+    fill: #ccc;
+}
